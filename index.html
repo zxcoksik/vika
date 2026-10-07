@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Вика — 100 причин</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Playfair+Display:ital,wght@1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+<main>
+<section class="slide cover">
+  <div class="photo" role="img" aria-label="Вика вечером среди ёлок"></div>
+  <div class="veil"></div>
+  <h1 id="name" aria-label="Вика">Вика</h1>
+  <p class="script">причины, почему ты лучшая</p>
+  <div class="cta"><a class="btn" href="#reasons">[ Открыть причины ]</a></div>
+  <span class="tag l">[ нежность ]</span><span class="tag r">[ любовь ]</span>
+</section>
+
+<section class="slide green" id="reasons">
+  <h2>Причины<em>почему ты лучшая</em></h2>
+  <div class="board">
+    <div class="ctrl">
+      <p class="sub">Нажимай на карточки. Каждая открывает одну причину.</p>
+      <div class="meter"><div id="bar"></div></div>
+      <p id="count">Открыто 0 из 100</p>
+      <div class="stage" aria-live="polite"><span id="no"></span><p id="txt">Выбери любую карточку</p></div>
+      <div class="row"><button class="btn" id="rnd">Случайная причина</button><button class="btn ghost" id="rst">Начать заново</button></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="slide fin" id="end" hidden>
+  <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M30 320c90-150 200-150 130-30s-110 130 30 90 190-230 280-130-70 160 40 140 200-190 270-100" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".75"/></svg>
+  <h2>Ты лучшая<em>Вика</em></h2>
+  <p>Сто из ста. На самом деле причин больше, просто они не поместились на одну страницу.</p>
+</section>
+<section class="slide sky" id="stars">
+  <h2>Созвездие<em>для Вики</em></h2>
+  <div class="skyrow">
+    <svg id="sky" viewBox="0 0 400 360" role="group" aria-label="Звёзды, которые нужно соединить по порядку"></svg>
+    <div class="qbox"><p class="qn">[ Загадка ]</p><p class="qt">Соедини звёзды по порядку и узнай, что они рисуют.</p><p id="sinfo" class="sub"></p><div><button class="btn ghost" id="sr">Начать заново</button></div></div>
+  </div>
+</section>
+<section class="slide quiz" id="test">
+  <h2>Тест<em>всё серьёзно</em></h2>
+  <div class="qbox" id="quiz" aria-live="polite"></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
